@@ -1,5 +1,5 @@
 # Projeto MeetMe
 
-Hello, this is the MeetMe Project, a different way to show my portfolio. In this project I will put all the concepts I learned with courses into practice. Enjoy!
+Hello, this is Project MeetMe, a different way to show my portfolio. In this project I will put all the concepts I learned with courses into practice. Enjoy!
 
 Olá, esse é o Projeto MeetMe, uma maneira diferente de mostrar meu portfolio. Nesse projeto eu colocarei todos os conceitos que aprendi com cursos em prática. Aproveite!
