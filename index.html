@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet.me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Nunito:wght@300;700&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="container__geral componente">
+    <div class="componente sideBar">
+      <button class="componente fechaSideBar">X</button>
+      <button class="componente ativarModo">Ativar Modo: Escuro</button>
+    </div>
+    <nav class="componente navigation">
+      <h2 class="componente titulo__navigation">
+        <b class="componente titulo-navigation__bold">Meet</b>.me
+      </h2>
+      <button class="componente abrirSideBar">
+        <img
+          src="img/lua-fina.png"
+          class="componente abrirSideBar__imagem"
+          alt="icone lua"
+        />
+      </button>
+    </nav>
+    <header class="componente cabecalho">
+      <div class="componente cabecalho__linha">
+        <div class="componente cabecalho__coluna">
+          <h1 class="componente titulo__cabecalho">Olá, eu sou o Pedro. . .</h1>
+          <img
+            src="img/foto minha normal.jpg"
+            alt="foto de perfil"
+            class="componente foto-de-perfil"
+          />
+        </div>
+        <div class="componente cabecalho__coluna2">
+        <p class="componente cabecalho__texto">
+          Me chamo Pedro Brandão Araújo, tenho 16 anos, e eu fiz esse projeto com
+          o objetivo de organizar em um só lugar todo o meu portfólio como
+          desenvolvedor front-end.
+        </p>
+        <h2 class="componente cabecalho__titulo-sobre-mim">Sobre mim</h2>
+        <p class="componente cabecalho__texto-sobre-mim">
+          Eu comecei a aprender programação em Junho de 2022, com o objetivo de
+          entrar em um dos melhores mercados de trabalho do mundo. Moro em São
+          Paulo desde que nasci, no meu tempo livre, gosto de estudar, jogar
+          videogame, ouvir música, e assistir séries e filmes.
+        </p>
+      </div>
+      </div>
+
+      <hr class="componente linha-divisoria" />
+    </header>
+    <h2 class="componente projetos__titulo">Projetos</h2>
+    <div class="componente projetos">
+      <div class="componente card">
+        <div class="componente card__coluna1">
+        <h2 class="componente card__titulo">Alura Books</h2>
+        <p class="componente card__texto">
+          Este projeto foi desenvolvido no curso HTML e CSS: responsividade com
+          mobile-first, da Alura.
+        </p>
+        </div>
+        <div class="componente card__coluna2">
+          <img src="./img/LogoAluraBooks.svg" alt="Logo do projeto" class="componente LogoProjeto">
+          <a target="_blank" href="https://github.com/PedroBrandao05/AluraBooks" class="componente projetoLink"><img class="componente logoGitHub" src="./img/iconmonstr-github-1.svg"> GitHub do projeto</a>
+          </div>
+        </div>
+        <div class="componente card">
+          <div class="componente card__coluna1">
+          <h2 class="componente card__titulo">Dark Mode</h2>
+          <p class="componente card__texto">
+            Este foi o primeiro "projeto" que desenvolvi por conta própria. Ele foi feito como exercício de treino para manipulação da DOM com JavaScript.
+          </p>
+          </div>
+          <div class="componente card__coluna2">
+            <img src="./img/LogoDarkMode.png" alt="Logo do projeto" class="componente LogoProjetoDarkMode">
+            <a target="_blank" href="https://github.com/PedroBrandao05/DarkMode" class="componente projetoLink"><img class="componente logoGitHub" src="./img/iconmonstr-github-1.svg"> GitHub do projeto</a>
+            </div>
+          </div>
+      </div>
+    </div>
+    <footer class="componente socialMedia">
+      <h2 class="componente socialMedia__titulo">Redes Sociais</h2>
+      <ul class="componente lista__socialMedia">
+        <li class="componente itens__socialMedia"><a href="https://www.linkedin.com/in/pedro-brandão-33505a23a/" class="componente itens__link"><img src="./img/LinkedIn_logo_initials.png" alt="logo do linkedin" class="componente logoSocialMedia">Linkedin</a></li>
+        <li class="componente itens__socialMedia"><a href="https://github.com/PedroBrandao05" class="componente itens__link"><img src="./img/iconmonstr-github-1.svg" alt="logo do GitHub" class="componente logoGitHub logoSocialMedia">GitHub</a></li>
+        <li class="componente itens__socialMedia"><a href="mailto: pedro-brandao2012@hotmail.com" class="componente itens__link"><img src="./img/iconeEmail.png" alt="icone email" class="componente logoSocialMedia logoEmail">pedro-brandao2012@hotmail.com</a></li>
+      </ul>
+    </footer>
+  </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/darkMode.js"></script>
+  </body>
+</html>

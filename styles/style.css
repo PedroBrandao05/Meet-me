@@ -1,0 +1,353 @@
+:root {
+  --dark-gray: #23232B;
+  --black: #040408;
+  --light-gray: #312F45;
+  --white: #FFFFFF;
+  --fonte-principal: 'Lato';
+  --fonte-logo: 'Nunito';
+  --cream: #F7F2FF;
+  --beige: #D9D5E0;
+  --marrom: #6D6185;
+  --black-pink: #060408;
+}
+
+.container__geral {
+  background-color: var(--cream);
+}
+
+.darkMode.container__geral {
+  background-color: #23232B;
+}
+
+
+/* Navigation */
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: var(--beige);
+}
+
+.darkMode.navigation {
+  background-color: var(--dark-gray);
+}
+
+.titulo__navigation{
+  font-family: var(--fonte-logo);
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.darkMode.titulo__navigation{
+  color: var(--white);
+}
+
+.titulo-navigation__bold{
+  font-weight: 600;
+}
+
+.abrirSideBar{
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+}
+
+.abrirSideBar:hover{
+  cursor: pointer;
+}
+
+.abrirSideBar__imagem{
+  width: 36px;
+  height: 36px;
+}
+
+.darkMode.abrirSideBar__imagem{
+  content: url(../img/lua-fina-branca.png);
+}
+
+.fechaSideBar {
+  color: var(--white);
+  background-color: transparent;
+  width: 2em;
+  height: 2.5em;
+  font-size: 20px;
+  font-family: var(--fonte-principal);
+  margin-left: auto;
+  border: none;
+}
+
+
+.fechaSideBar:hover {
+  cursor: pointer;
+}
+
+.sideBar {
+  display: none;
+  background-color: var(--marrom);
+}
+
+.sideBar.on {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 1em 2em;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 14em;
+  height: 100vh;
+  z-index: 10;
+  transition: display 2s;
+  gap: 2em;
+}
+
+.darkMode.sideBar {
+  background-color: var(--light-gray);
+}
+
+.ativarModo {
+  padding: 1em;
+  background-color: transparent;
+  border: 1px solid var(--white);
+  font-family: var(--fonte-principal);
+  color: var(--white);
+  font-size: 16px;
+  height: 3.5em;
+  margin-right: 1.5em;
+  width: 12em;
+}
+
+
+/* Cabecalho */
+
+.foto-de-perfil{
+  width: 20em;
+}
+
+.cabecalho{
+ padding: 2em;
+ background-color: #C4C2C0;
+}
+
+.darkMode.cabecalho {
+  background-color: var(--black-pink);
+}
+
+.cabecalho__linha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15em;
+  margin-right: 15em;
+  margin-bottom: 3em;
+  gap: 5em;
+}
+
+.cabecalho__coluna {
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  gap: 1.5em;
+}
+
+
+.cabecalho__coluna2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.titulo__cabecalho, .cabecalho__texto, 
+.cabecalho__titulo-sobre-mim, .cabecalho__texto-sobre-mim {
+  font-family: var(--fonte-principal);
+  color: var(--dark-gray);
+  font-weight: 400;
+}
+
+.darkMode.titulo__cabecalho, .darkMode.cabecalho__texto, 
+.darkMode.cabecalho__titulo-sobre-mim, .darkMode.cabecalho__texto-sobre-mim {
+  font-family: var(--fonte-principal);
+  color: var(--white);
+  font-weight: 400;
+}
+
+
+.titulo__cabecalho {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: initial;
+}
+
+/* Projetos */
+
+.projetos__titulo {
+  margin-top: 3em;
+  margin-left: 3em;
+  margin-bottom: 3em;
+  font-family: var(--fonte-principal);
+  color: var(--black);
+  font-size: 26px;
+}
+
+.darkMode.projetos__titulo{
+  color: var(--white);
+}
+
+.projetos {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 4em;
+  padding-left: 2.5em;
+}
+
+.card {
+  background-color: var(--white);
+  width: 30em;
+  height: 13em;
+  margin-left: 3em;
+  display: flex;
+  padding: 1.5em;
+  border-radius: 10px;
+  margin-bottom: 2em;
+  gap: 0.5em
+}
+
+.darkMode.card{
+  background-color: var(--black);
+  border: 1px solid var(--white);
+}
+
+.card__coluna1 {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  gap: 1em;
+  margin-right: 0.5em;
+}
+
+.card__titulo {
+  font-family: 'Poppins';
+  font-size: 26px;
+}
+
+.darkMode.card__titulo, .darkMode.card__texto {
+  color: var(--white);
+}
+
+.card__texto {
+  font-family: var(--fonte-principal);
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.card__coluna2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3em;
+  padding-right: 2em;
+  gap: 2em;
+  border-left: 1px solid black;
+}
+
+.darkMode.card__coluna2{
+  border-left: 1px solid var(--white);
+}
+
+.LogoProjeto {
+  width: 6em;
+}
+
+.projetoLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4em;
+  width: 12em;
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 0.5em;
+  color: var(--black);
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: var(--fonte-principal);
+}
+
+.darkMode.projetoLink {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.darkMode.logoGitHub {
+  content: url(../img/github_logo_branco.png);
+  width: 24px;
+}
+
+.LogoProjetoDarkMode {
+  width: 10em;
+  margin-block: 1em;
+}
+
+.darkMode.LogoProjetoDarkMode {
+  content: url(../img/LogoDarkMode-branco.png);
+}
+
+/* Social Media */
+
+.socialMedia {
+  display: flex;
+  flex: column;
+  gap: 3em;
+  background-color: var(--white);
+  padding: 1.5em;
+  align-items: center;
+}
+
+.darkMode.socialMedia {
+  background-color: var(--black)
+}
+
+.socialMedia__titulo{
+  font-family: var(--fonte-principal);
+  font-size: 20px;
+  margin-right: 12em;
+}
+
+.darkMode.socialMedia__titulo{
+  color: var(--white);
+}
+
+.lista__socialMedia {
+  display: flex;
+  gap: 2em;
+}
+
+.logoSocialMedia {
+  width: 36px;
+}
+
+.itens__link {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  color: var(--black);
+  text-decoration: none;
+  font-family: var(--fonte-principal);
+}
+
+.darkMode.logoSocialMedia.logoGitHub {
+  width: 36px;
+}
+
+.darkMode.logoEmail{
+  content: url(../img/iconeEmailBranco.png);
+}
+
+.darkMode.itens__link {
+  color: var(--white);
+}
